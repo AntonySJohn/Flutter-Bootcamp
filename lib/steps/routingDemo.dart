@@ -19,7 +19,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello World'),
+        title: Text(
+          'Hello World',
+          style: TextStyle(fontSize: 18),
+        ),
         backgroundColor: Colors.teal,
       ),
       backgroundColor: Colors.green,
@@ -29,7 +32,14 @@ class HomePage extends StatelessWidget {
             .push(MaterialPageRoute(builder: (context) => Hello())),
         backgroundColor: Colors.teal,
       ),
-      body: Text('First screen'),
+      body: Row(
+        children: [
+          Text(
+            'First screen',
+            style: TextStyle(fontSize: 18),
+          ),
+        ],
+      ),
     );
   }
 }

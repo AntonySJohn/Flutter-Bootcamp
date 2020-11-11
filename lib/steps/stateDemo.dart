@@ -28,7 +28,10 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: color[index],
       body: Row(
         children: [
-          Text('HELLO WORLD'),
+          Text(
+            'HELLO WORLD',
+            style: TextStyle(fontSize: 18),
+          ),
           FlatButton(
               color: Colors.grey,
               onPressed: () {
@@ -42,7 +45,10 @@ class _HomePageState extends State<HomePage> {
                   });
                 }
               },
-              child: Text("ChangeColor"))
+              child: Text(
+                "ChangeColor",
+                style: TextStyle(fontSize: 18),
+              ))
         ],
       ),
     );

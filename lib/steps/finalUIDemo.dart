@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:profile/hello.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,12 +22,6 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.teal,
       ),
       backgroundColor: Colors.green,
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.navigation),
-        onPressed: () => Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => Hello())),
-        backgroundColor: Colors.teal,
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
