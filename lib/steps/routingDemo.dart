@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile/hello.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,13 +23,13 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.teal,
       ),
       backgroundColor: Colors.green,
-      body: Center(
-        child: Container(
-          color: Colors.pink,
-          height: 70,
-          width: 200,
-        ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.navigation),
+        onPressed: () => Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => Hello())),
+        backgroundColor: Colors.teal,
       ),
+      body: Text('First screen'),
     );
   }
 }

@@ -19,31 +19,41 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Hello World'),
+        backgroundColor: Colors.teal,
       ),
       backgroundColor: Colors.green,
       body: Center(
-        child: Container(
-          color: Colors.pink,
-          height: 70,
-          width: 200,
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Text(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Card(
+              color: Colors.white,
+              child: ListTile(
+                title: Text(
                   'Name: John Doe',
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+                  style: TextStyle(fontSize: 20, color: Colors.teal),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Text(
-                  'Age: 54',
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+            ),
+            Card(
+              color: Colors.white,
+              child: ListTile(
+                title: Text(
+                  'Phone: +91-9876543210',
+                  style: TextStyle(fontSize: 20, color: Colors.teal),
                 ),
               ),
-            ],
-          ),
+            ),
+            Card(
+              color: Colors.white,
+              child: ListTile(
+                title: Text(
+                  'Email: johndoe@gmail.com',
+                  style: TextStyle(fontSize: 20, color: Colors.teal),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
