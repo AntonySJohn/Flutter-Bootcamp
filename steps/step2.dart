@@ -8,14 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: HomePage(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text('HELLO WORLD');
+    return Scaffold(
+      body: Text('HELLO WORLD'),
+    );
   }
 }
