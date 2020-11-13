@@ -18,48 +18,37 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello World'),
+        title: Text("My First App"),
+        backgroundColor: Colors.teal,
       ),
       backgroundColor: Colors.green,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'images/account.png',
-              height: 160,
-              fit: BoxFit.fitHeight,
-            ),
-            Card(
-              color: Colors.white,
-              child: ListTile(
-                title: Text(
-                  'Name: John Doe',
-                  style: TextStyle(fontSize: 20, color: Colors.teal),
-                ),
+          child: Column(
+            children: [
+              Container(
+                  width: 300,
+                  color: Colors.white,
+                  child: ListTile(
+                      leading: Icon(
+                        Icons.account_circle,
+                      ),
+                      title: Text("John Doe")
+                  )
               ),
-            ),
-            Card(
-              color: Colors.white,
-              child: ListTile(
-                title: Text(
-                  'Phone: +91-9876543210',
-                  style: TextStyle(fontSize: 20, color: Colors.teal),
-                ),
+              Container(
+                  width: 300,
+                  color: Colors.white,
+                  child: ListTile(
+                      leading: Icon(
+                        Icons.android,
+                      ),
+                      title: Text("Flutter Developer")
+                  )
               ),
-            ),
-            Card(
-              color: Colors.white,
-              child: ListTile(
-                title: Text(
-                  'Email: johndoe@gmail.com',
-                  style: TextStyle(fontSize: 20, color: Colors.teal),
-                ),
-              ),
-            ),
-          ],
-        ),
+            ],
+          )
       ),
     );
   }
 }
+

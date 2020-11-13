@@ -13,15 +13,28 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  var color = [Colors.green, Colors.red, Colors.blue, Colors.pink];
+  var index = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.navigation,
+        ),
+        onPressed: null,
+      ),
       appBar: AppBar(
         title: Text("My First App"),
         backgroundColor: Colors.teal,
       ),
-      backgroundColor: Colors.green,
+      backgroundColor: color[index],
       body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
