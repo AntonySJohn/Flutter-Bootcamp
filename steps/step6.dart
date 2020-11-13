@@ -18,15 +18,21 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello World'),
+        title: Text("My First App"),
+        backgroundColor: Colors.teal,
       ),
       backgroundColor: Colors.green,
       body: Center(
-        child: Image.asset(
-          'images/account.png',
-          height: 160,
-          fit: BoxFit.fitHeight,
-        ),
+          child: Container(
+              width: 300,
+              color: Colors.white,
+              child: ListTile(
+                  leading: Icon(
+                    Icons.account_circle,
+                  ),
+                  title: Text("John Doe")
+              )
+          )
       ),
     );
   }

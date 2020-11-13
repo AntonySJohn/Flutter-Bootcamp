@@ -18,16 +18,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello World'),
+        title: Text("My First App"),
         backgroundColor: Colors.teal,
       ),
       backgroundColor: Colors.green,
       body: Center(
-        child: Container(
-          color: Colors.pink,
-          height: 70,
-          width: 200,
-        ),
+        child: Text("Hello World!"),
       ),
     );
   }

@@ -18,7 +18,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green,
-      body: Text('HELLO WORLD'),
+      body: Center(
+          child: Text("Hello World!"),
+      ),
     );
   }
 }

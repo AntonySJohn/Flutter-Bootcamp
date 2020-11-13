@@ -8,14 +8,32 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: HomePage(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text('HELLO WORLD');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My First App"),
+        backgroundColor: Colors.teal,
+      ),
+      backgroundColor: Colors.green,
+      body: Center(
+          child: Container(
+            width: 300,
+              color: Colors.white,
+              child: ListTile(
+                  leading: Icon(
+                    Icons.account_circle,
+                  ),
+                  title: Text("John Doe")
+              )
+          )
+      ),
+    );
   }
 }
